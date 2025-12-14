@@ -446,26 +446,5 @@ plot(best_model, which="residuals")
 dev.off()
 cat("Saved: plots_gmm/10_residual_diagnostics.pdf\n")
 
-# ============================================
-# 生成的PDF图片总结
-# ============================================
-
-cat("\n========================================\n")
-cat("Plots saved to plots_gmm/:\n")
-cat("========================================\n")
-cat("1. plots_gmm/01_observation_distribution.pdf  - Data overview\n")
-cat("2. plots_gmm/02_spaghetti_plot.pdf            - Spaghetti plot\n")
-cat("3. plots_gmm/03_model_comparison.pdf          - AIC/BIC\n")
-if(K_best > 1) {
-  cat("4. plots_gmm/04_class_proportions.pdf         - Class proportions\n")
-  cat("5. plots_gmm/05_posterior_probabilities.pdf   - Posterior probabilities\n")
-  cat("6. plots_gmm/06_class_trajectories.pdf        - Trajectories (lcmm)\n")
-  cat("7. plots_gmm/07_class_trajectories_ggplot.pdf - Trajectories (ggplot)\n")
-  cat("8. plots_gmm/08_class_characteristics.pdf     - Baseline characteristics\n")
-  cat("9. plots_gmm/09_survival_outcomes.pdf         - Survival outcomes\n")
-}
-cat("10. plots_gmm/10_residual_diagnostics.pdf      - Residual diagnostics\n")
-cat("========================================\n")
-cat("Done.\n")
 cat("Best model: K =", K_best, "\n")
 cat("========================================\n")

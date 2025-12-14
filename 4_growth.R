@@ -520,8 +520,8 @@ cat("Corr(intercept, slope):", round(cor_value, 3), "\n")
 # ==============================================================================
 # Part 10: Stratified Growth Curve Analysis by GMM Classes
 # ==============================================================================
-# 理论整合: Chapter 5 (GMM) + Chapter 4 (Growth Curves)
-# 先用GMM识别潜在患者亚组，再在每个亚组内拟合生长曲线模型
+# Theoretical integration: Chapter 5 (GMM) + Chapter 4 (Growth Curves)
+# First use GMM to identify latent patient subgroups, then fit growth curve models within each subgroup
 
 cat("\n========================================\n")
 cat("Part 10: Stratified growth curve analysis (GMM classes)\n")
